@@ -1,4 +1,5 @@
 .idea
 package-lock.json
-records.csv
+Database/records.csv
 node_modules
+Database/test.db
