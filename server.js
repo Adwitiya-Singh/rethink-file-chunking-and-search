@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 8080
 const parse   = require('csv-parse');
 const fs = require('fs')
 const sqlite3 = require('sqlite3').verbose();
@@ -12,7 +12,7 @@ let db = new sqlite3.Database('Database/test.db', (err) => {
 });
 
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     let place = (req.query.page?req.query.page:1)*100;
 
     if (req.query.search){
