@@ -31,8 +31,15 @@ Limitations:
 - Fuzzy search logic is primitive
 - `csv_to_sqlite` service has a poor time complexity
 
-To be done:
 
+Packages Used:
+- [express](https://www.npmjs.com/package/express)
+- [sqlite3](https://www.npmjs.com/package/sqlite3)
+- [react-table](https://www.npmjs.com/package/react-table)
+- [styled-components](https://www.npmjs.com/package/styled-components)
+
+
+Future Works:
 - `.CSV` to sqlite service can be made orders of magnitude faster by doing batch insertions
 - search can be made faster for files with more than 10 million lines by using [FTS5](https://sqlite.org/fts5.html)
 - The app can be made more generic by abstracting away the sql-to-csv layer which will make it work for any provided `.CSV` file
